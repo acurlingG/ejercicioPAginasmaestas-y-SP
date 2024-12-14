@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Plantilla.master.cs" Inherits="quiz.CapaVistas.Plantilla" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../css/menu.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul>
+                <li><a class="home.aspx" href="#home">Inicio</a></li>
+                <li><a href="school.aspx">School</a></li>
+                <li><a href="Class.aspx">Class</a></li>
+                <li><a href="Estudiante.aspx">Students</a></li>
+                <li><a href="#about">Salir</a></li>
+            </ul>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
